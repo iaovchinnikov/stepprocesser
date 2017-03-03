@@ -14,7 +14,7 @@ protocol StepProcesserDelegate : class {
     func stepProcesser(processer: StepProcesser, getNewStep step : Step)
 }
 
-open class StepProcesser {
+public class StepProcesser {
     weak var delegate : StepProcesserDelegate?
     private let motionManager : CMMotionManager = CMMotionManager()
     
