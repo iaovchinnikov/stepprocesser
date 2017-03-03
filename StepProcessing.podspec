@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-  s.name             = 'StepProcessing’
+  s.name             = 'StepProcessing'
   s.version          = '0.1.0'
   s.summary          = 'A short description of StepProcesser.'
 
