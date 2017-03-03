@@ -14,7 +14,7 @@ protocol StepProcesserDelegate : class {
     func stepProcesser(processer: StepProcesser, getNewStep step : Step)
 }
 
-class StepProcesser {
+open class StepProcesser {
     weak var delegate : StepProcesserDelegate?
     private let motionManager : CMMotionManager = CMMotionManager()
     
@@ -158,7 +158,7 @@ extension CMDeviceMotion {
 }
 
 
-class Step {
+open class Step {
     var max             : Double?
     var min             : Double?
     var up_timewidth    : TimeInterval?
